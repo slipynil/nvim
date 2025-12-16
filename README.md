@@ -16,9 +16,9 @@ gopls version
 git clone git@github.com:slipynil/nvim.git ~/.config/nvim && nvim
 ```
 
-**Run commands in nvim**
-Run :MasonInstallAll command after lazy.nvim finishes downloading plugins
-Run :LazySync for setting up gopls and TreeSeeter
+**Run commands in nvim**  
+Run :MasonInstallAll command after lazy.nvim finishes downloading plugins  
+Run :LazySync for setting up gopls and TreeSeeter  
 
 **(Optional) Delete .git folder if you want to create own git**
 ```bash
