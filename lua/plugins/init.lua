@@ -13,6 +13,12 @@ return {
     end,
   },
 
+  -- tinygo plugin
+  {
+    "replu/tinygo.nvim",
+    lazy = true,
+    config = function() require("tinygo").setup({}) end
+  }
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
