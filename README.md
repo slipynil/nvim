@@ -29,5 +29,5 @@ rm -rf ~/.config/nvim/.git
 git init
 ```
 
-congatulations, enjoy your nvim!
+congratulations, enjoy your nvim!
 <img width="5000" height="360" alt="image" src="https://github.com/user-attachments/assets/6a5db98d-2d7a-43e6-b112-bdad01940b66" />
