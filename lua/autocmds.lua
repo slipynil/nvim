@@ -12,3 +12,13 @@ vim.api.nvim_create_autocmd("BufWritePre", {
   end,
 })
 
+-- грузит плагин tinygo.nvim только если есть "tiny" надпись в открытом файле
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" },{
+  pattern = "*.go",
+  callback = function()
+    local filename = vim.fn.expand("%:t")
+    if filename:match("tiny") then
+      require("lazy").load({plugins = { "tinygo.nvim" }})
+    end
+  end,
+})
