@@ -15,7 +15,7 @@ return {
 
   -- tinygo plugin
   {
-    "replu/tinygo.nvim",
+    "pcolladosoto/tinygo.nvim",
     lazy = true,
     config = function() require("tinygo").setup({}) end
   }
