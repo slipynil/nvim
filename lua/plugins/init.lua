@@ -18,17 +18,17 @@ return {
     "pcolladosoto/tinygo.nvim",
     lazy = true,
     config = function() require("tinygo").setup({}) end
-  }
-  -- test new blink
-  -- { import = "nvchad.blink.lazyspec" },
-
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  },
+  -- nvim-treesitter setup
+  {
+   	"nvim-treesitter/nvim-treesitter",
+   	opts = {
+   		ensure_installed = { "vim", "lua", "vimdoc", "html", "css", "go", "gomod" },
+      highlight = {
+        enable = true,
+        additional_vim_regex_highlighting = false,
+      },
+      indent = { enable = true },
+   	},
+  },
 }
